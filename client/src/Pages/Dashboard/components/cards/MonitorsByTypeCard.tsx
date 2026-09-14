@@ -18,7 +18,7 @@ export const MonitorsByTypeCard = ({ monitorsByType }: MonitorsByTypeCardProps) 
 
 	return (
 		<DashboardCard title={t("pages.dashboard.cards.monitorsByType")}>
-			<Stack gap={LAYOUT.SM}>
+			<Stack gap={theme.spacing(LAYOUT.SM)}>
 				{monitorsByType.map(({ type, count }) => (
 					<BarRow
 						key={type}
